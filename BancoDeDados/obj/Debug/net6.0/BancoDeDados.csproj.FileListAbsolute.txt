@@ -1,0 +1,14 @@
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\bin\Debug\net6.0\BancoDeDados.deps.json
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\bin\Debug\net6.0\BancoDeDados.runtimeconfig.json
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\bin\Debug\net6.0\BancoDeDados.dll
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\bin\Debug\net6.0\BancoDeDados.pdb
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.csproj.AssemblyReference.cache
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.AssemblyInfoInputs.cache
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.AssemblyInfo.cs
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.dll
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\refint\BancoDeDados.dll
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.pdb
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\BancoDeDados.genruntimeconfig.cache
+C:\Users\mathe\source\Repos\CadastroQuestoes\BancoDeDados\obj\Debug\net6.0\ref\BancoDeDados.dll
