@@ -13,18 +13,12 @@ namespace CadastroQuestoes
             InitializeComponent();
         }
 
-        private void aoClicarSair(object sender, System.EventArgs e)
+        private void AoClicarSair(object sender, System.EventArgs e)
         {
             this.Close();
         }
 
-        private void aoDigitarAlgoTitulo(object sender, KeyPressEventArgs e)
-        {
-            txtCorpo.Text = $"{txtTitulo.Text.Length + 1} Letra Digitada";
-
-        }
-
-        private void ao(object sender, EventArgs e)
+        private void Ao(object sender, EventArgs e)
         {
             txtTitulo.Text = Regex.Replace(txtTitulo.Text, @"(^\w)|(\s\w)", m => m.Value.ToUpper());
 

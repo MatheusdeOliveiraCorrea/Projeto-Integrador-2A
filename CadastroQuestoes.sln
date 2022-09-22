@@ -5,10 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroQuestoes", "CadastroQuestoes\CadastroQuestoes.csproj", "{6A8AE47D-D60B-49EF-BE35-16D8235A80B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoDeDados", "BancoDeDados\BancoDeDados.csproj", "{3A26FC2C-FE89-4753-82B1-A5AA7E896C98}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DadosBanco", "DadosBanco\DadosBanco.csproj", "{7E9C463B-89AB-4FEE-B3EC-1202BFEF6ADF}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

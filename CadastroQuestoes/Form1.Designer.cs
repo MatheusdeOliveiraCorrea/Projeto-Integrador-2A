@@ -98,8 +98,7 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(556, 22);
             this.txtTitulo.TabIndex = 0;
-            this.txtTitulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aoDigitarAlgoTitulo);
-            this.txtTitulo.Leave += new System.EventHandler(this.ao);
+            this.txtTitulo.Leave += new System.EventHandler(this.Ao);
             // 
             // txtCorpo
             // 
@@ -163,7 +162,6 @@
             this.btnSair.TabStop = false;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.aoClicarSair);
             // 
             // label1
             // 
