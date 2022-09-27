@@ -15,6 +15,6 @@ namespace DataBase.Models
         public string Corpo { get; set; }
 
         [StringLength(80)]
-        public string Resposta { get; set; }
+        public string ?Resposta { get; set; }
     }
 }

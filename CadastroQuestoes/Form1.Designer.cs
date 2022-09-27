@@ -98,6 +98,7 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(556, 22);
             this.txtTitulo.TabIndex = 0;
+            this.txtTitulo.Leave += new System.EventHandler(this.ValidarTituloSaida);
             // 
             // txtCorpo
             // 
@@ -107,15 +108,16 @@
             this.txtCorpo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtCorpo.Size = new System.Drawing.Size(554, 137);
             this.txtCorpo.TabIndex = 1;
+            this.txtCorpo.Enter += new System.EventHandler(this.AoValidarCorpoEntrada);
             // 
             // btnExcluir
             // 
             this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluir.Location = new System.Drawing.Point(786, 318);
+            this.btnExcluir.Location = new System.Drawing.Point(290, 370);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(151, 24);
+            this.btnExcluir.Size = new System.Drawing.Size(121, 24);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "REMOVER";
@@ -127,9 +129,9 @@
             this.btnEditar.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.Location = new System.Drawing.Point(788, 278);
+            this.btnEditar.Location = new System.Drawing.Point(170, 370);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(151, 24);
+            this.btnEditar.Size = new System.Drawing.Size(114, 24);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.TabStop = false;
             this.btnEditar.Text = "EDITAR";
@@ -141,13 +143,13 @@
             this.btnCadastrar.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCadastrar.Location = new System.Drawing.Point(788, 358);
+            this.btnCadastrar.Location = new System.Drawing.Point(786, 370);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(153, 26);
-            this.btnCadastrar.TabIndex = 2;
+            this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "SALVAR";
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.aoClicarEmSalvar);
+            this.btnCadastrar.Click += new System.EventHandler(this.AoClicarEmSalvar);
             // 
             // btnSair
             // 
@@ -194,7 +196,7 @@
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(951, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(962, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -276,8 +278,8 @@
             this.txtResposta.Multiline = true;
             this.txtResposta.Name = "txtResposta";
             this.txtResposta.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtResposta.Size = new System.Drawing.Size(394, 106);
-            this.txtResposta.TabIndex = 13;
+            this.txtResposta.Size = new System.Drawing.Size(553, 86);
+            this.txtResposta.TabIndex = 2;
             // 
             // TelaPrincipal
             // 
@@ -285,7 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(951, 396);
+            this.ClientSize = new System.Drawing.Size(962, 396);
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

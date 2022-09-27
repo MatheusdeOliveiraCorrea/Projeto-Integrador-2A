@@ -9,14 +9,14 @@ C:\Users\mathe\source\Repos\CadastroQuestoes\CadastroQuestoes\obj\Debug\Cadastro
 C:\Users\mathe\source\Repos\CadastroQuestoes\CadastroQuestoes\obj\Debug\CadastroQuestoes.csproj.CoreCompileInputs.cache
 C:\Users\mathe\source\Repos\CadastroQuestoes\CadastroQuestoes\obj\Debug\CadastroQuestoes.exe
 C:\Users\mathe\source\Repos\CadastroQuestoes\CadastroQuestoes\obj\Debug\CadastroQuestoes.pdb
-C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.exe.config
-C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.exe
-C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.pdb
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.csproj.AssemblyReference.cache
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.csproj.SuggestedBindingRedirects.cache
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.TelaPrincipal.resources
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.Properties.Resources.resources
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.csproj.GenerateResource.cache
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.exe.config
+C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.exe
+C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\bin\Debug\CadastroQuestoes.pdb
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.exe
 C:\Users\Matheus\Documents\Visual Studio 2022\Projeto-Integrador-2A\CadastroQuestoes\obj\Debug\CadastroQuestoes.pdb
