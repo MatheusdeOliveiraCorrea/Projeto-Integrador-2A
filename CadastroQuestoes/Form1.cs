@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace CadastroQuestoes
@@ -13,14 +10,13 @@ namespace CadastroQuestoes
             InitializeComponent();
         }
 
-        private void AoClicarSair(object sender, System.EventArgs e)
+        private void AoClicarSair(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void Ao(object sender, EventArgs e)
+        private void aoClicarEmSalvar(object sender, EventArgs e)
         {
-            txtTitulo.Text = Regex.Replace(txtTitulo.Text, @"(^\w)|(\s\w)", m => m.Value.ToUpper());
 
         }
     }

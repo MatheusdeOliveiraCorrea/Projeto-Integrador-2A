@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\source\\Repos\\CadastroQuestoes\\BancoDeDados\\BancoDeDados.csproj": {}
+    "C:\\Users\\Matheus\\Documents\\Visual Studio 2022\\Projeto-Integrador-2A\\BancoDeDados\\BancoDeDados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\source\\Repos\\CadastroQuestoes\\BancoDeDados\\BancoDeDados.csproj": {
+    "C:\\Users\\Matheus\\Documents\\Visual Studio 2022\\Projeto-Integrador-2A\\BancoDeDados\\BancoDeDados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\source\\Repos\\CadastroQuestoes\\BancoDeDados\\BancoDeDados.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Documents\\Visual Studio 2022\\Projeto-Integrador-2A\\BancoDeDados\\BancoDeDados.csproj",
         "projectName": "BancoDeDados",
-        "projectPath": "C:\\Users\\mathe\\source\\Repos\\CadastroQuestoes\\BancoDeDados\\BancoDeDados.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\source\\Repos\\CadastroQuestoes\\BancoDeDados\\obj\\",
+        "projectPath": "C:\\Users\\Matheus\\Documents\\Visual Studio 2022\\Projeto-Integrador-2A\\BancoDeDados\\BancoDeDados.csproj",
+        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matheus\\Documents\\Visual Studio 2022\\Projeto-Integrador-2A\\BancoDeDados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

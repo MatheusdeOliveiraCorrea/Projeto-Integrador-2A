@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroQuestoes", "CadastroQuestoes\CadastroQuestoes.csproj", "{6A8AE47D-D60B-49EF-BE35-16D8235A80B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDeDados", "BancoDeDados\BancoDeDados.csproj", "{E7509EBA-2B18-4EDC-9E44-3E04912C31EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{715DBCFF-DAFB-4472-8CEC-6F7E94234CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6A8AE47D-D60B-49EF-BE35-16D8235A80B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8AE47D-D60B-49EF-BE35-16D8235A80B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8AE47D-D60B-49EF-BE35-16D8235A80B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7509EBA-2B18-4EDC-9E44-3E04912C31EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7509EBA-2B18-4EDC-9E44-3E04912C31EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7509EBA-2B18-4EDC-9E44-3E04912C31EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7509EBA-2B18-4EDC-9E44-3E04912C31EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715DBCFF-DAFB-4472-8CEC-6F7E94234CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715DBCFF-DAFB-4472-8CEC-6F7E94234CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715DBCFF-DAFB-4472-8CEC-6F7E94234CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715DBCFF-DAFB-4472-8CEC-6F7E94234CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

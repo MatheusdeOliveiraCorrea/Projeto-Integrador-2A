@@ -98,7 +98,6 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(556, 22);
             this.txtTitulo.TabIndex = 0;
-            this.txtTitulo.Leave += new System.EventHandler(this.Ao);
             // 
             // txtCorpo
             // 
@@ -148,6 +147,7 @@
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "SALVAR";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.aoClicarEmSalvar);
             // 
             // btnSair
             // 
@@ -162,6 +162,7 @@
             this.btnSair.TabStop = false;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.AoClicarSair);
             // 
             // label1
             // 
