@@ -5,5 +5,6 @@
         public static string StringDeConexao = "Server=DESKTOPMATHEUS;Database=projetoIntegrador2a;Trusted_Connection=True;";
         public static string AdicionarConexao = "insert into Questoes values (@titulo, @corpo, @resposta);";
         public static string ObterTodasQuestoes = "select * from Questoes;";
+        public static string DeletarUsuarioPorId = "Delete from Questoes where id = @id;";
     }
 }

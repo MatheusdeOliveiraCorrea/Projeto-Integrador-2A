@@ -1,9 +1,9 @@
-﻿using System;
+﻿using CadastroQuestoes.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using CadastroQuestoes.Modelo;
 
 namespace CadastroQuestoes
 {
@@ -31,7 +31,7 @@ namespace CadastroQuestoes
                 {
                     using (var cmd = new SqlCommand(ConstantesSQL.AdicionarConexao, conexaoSql))
                     {
-                        var questao = new Questao(txtTitulo.Text, txtCorpo.Text, txtResposta.Text); 
+                        var questao = new Questao(txtTitulo.Text, txtCorpo.Text, txtResposta.Text);
 
                         cmd.Parameters.AddWithValue("@titulo", questao.Titulo);
                         cmd.Parameters.AddWithValue("@corpo", questao.Corpo);
@@ -45,7 +45,7 @@ namespace CadastroQuestoes
 
                     this.PorDadosNaGrid();
                     this.LimparCampos();
-                    MessageBox.Show($"A questão {txtTitulo.Text} foi adicionada com sucesso"); 
+                    MessageBox.Show($"A questão {txtTitulo.Text} foi adicionada com sucesso");
                 }
             }
             catch (Exception ex)
@@ -98,7 +98,7 @@ namespace CadastroQuestoes
         {
             txtTitulo.Text = String.Empty;
             txtCorpo.Text = String.Empty;
-            txtResposta.Text = String.Empty; 
+            txtResposta.Text = String.Empty;
         }
 
         private void PorDadosNaGrid()
@@ -136,9 +136,39 @@ namespace CadastroQuestoes
             questao.ID = leitor.GetInt32(0);
             questao.Titulo = leitor.GetString(1);
             questao.Corpo = leitor.GetString(2);
-            questao.Resposta = leitor.GetString(3); 
+            questao.Resposta = leitor.GetString(3);
 
             return questao;
+        }
+
+        private void AoClicarExcluir(object sender, EventArgs e)
+        {
+            if (viewQuestoes.SelectedCells.Count > decimal.Zero)
+            {
+                var id = viewQuestoes.CurrentRow.Cells[0].Value.ToString();
+
+                using (var con = new SqlConnection(ConstantesSQL.StringDeConexao))
+                {
+                    using (var cmd = new SqlCommand(ConstantesSQL.DeletarUsuarioPorId, con))
+                    {
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        this.PorDadosNaGrid();
+                    }
+                }
+            }
+        }
+
+        private void AoClicarEmDesenvolvedores(object sender, EventArgs e)
+        {
+            new Desenvolvedores().ShowDialog();
+        }
+
+        private void AoClicarEmObjetivo(object sender, EventArgs e)
+        {
+            new Objetivo().ShowDialog();
         }
     }
 }

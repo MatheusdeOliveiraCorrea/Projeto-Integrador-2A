@@ -36,20 +36,14 @@
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.txtCorpo = new System.Windows.Forms.TextBox();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectionStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.definirStringDeConexãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaTemporariaosDadosSerãoPerdidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desenvolvedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.objetivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.txtResposta = new System.Windows.Forms.TextBox();
@@ -77,9 +71,9 @@
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitulo.Location = new System.Drawing.Point(458, 54);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(121, 16);
+            this.lblTitulo.Size = new System.Drawing.Size(40, 16);
             this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "Titulo Da Questão: ";
+            this.lblTitulo.Text = "Titulo";
             // 
             // lblCorpoQuestao
             // 
@@ -88,9 +82,9 @@
             this.lblCorpoQuestao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblCorpoQuestao.Location = new System.Drawing.Point(459, 100);
             this.lblCorpoQuestao.Name = "lblCorpoQuestao";
-            this.lblCorpoQuestao.Size = new System.Drawing.Size(125, 16);
+            this.lblCorpoQuestao.Size = new System.Drawing.Size(119, 16);
             this.lblCorpoQuestao.TabIndex = 2;
-            this.lblCorpoQuestao.Text = "Corpo Da Questão: ";
+            this.lblCorpoQuestao.Text = "Corpo Da Questão";
             // 
             // txtTitulo
             // 
@@ -117,27 +111,14 @@
             this.btnExcluir.ForeColor = System.Drawing.Color.Red;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluir.Location = new System.Drawing.Point(290, 370);
+            this.btnExcluir.Location = new System.Drawing.Point(192, 370);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(121, 24);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.TabStop = false;
             this.btnExcluir.Text = "REMOVER";
             this.btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.Location = new System.Drawing.Point(170, 370);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(114, 24);
-            this.btnEditar.TabIndex = 6;
-            this.btnEditar.TabStop = false;
-            this.btnEditar.Text = "EDITAR";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.AoClicarExcluir);
             // 
             // btnCadastrar
             // 
@@ -159,9 +140,9 @@
             this.btnSair.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSair.Location = new System.Drawing.Point(12, 370);
+            this.btnSair.Location = new System.Drawing.Point(15, 370);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(96, 24);
+            this.btnSair.Size = new System.Drawing.Size(155, 24);
             this.btnSair.TabIndex = 8;
             this.btnSair.TabStop = false;
             this.btnSair.Text = "SAIR";
@@ -193,8 +174,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dadosToolStripMenuItem,
-            this.visualizarToolStripMenuItem,
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -202,53 +181,11 @@
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // dadosToolStripMenuItem
-            // 
-            this.dadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.connectionStringToolStripMenuItem,
-            this.listaTemporariaosDadosSerãoPerdidosToolStripMenuItem});
-            this.dadosToolStripMenuItem.Name = "dadosToolStripMenuItem";
-            this.dadosToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.dadosToolStripMenuItem.Text = "Dados";
-            // 
-            // connectionStringToolStripMenuItem
-            // 
-            this.connectionStringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.definirStringDeConexãoToolStripMenuItem});
-            this.connectionStringToolStripMenuItem.Name = "connectionStringToolStripMenuItem";
-            this.connectionStringToolStripMenuItem.Size = new System.Drawing.Size(291, 22);
-            this.connectionStringToolStripMenuItem.Text = "ConnectionString";
-            // 
-            // definirStringDeConexãoToolStripMenuItem
-            // 
-            this.definirStringDeConexãoToolStripMenuItem.Name = "definirStringDeConexãoToolStripMenuItem";
-            this.definirStringDeConexãoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.definirStringDeConexãoToolStripMenuItem.Text = "Definir string de conexão";
-            // 
-            // listaTemporariaosDadosSerãoPerdidosToolStripMenuItem
-            // 
-            this.listaTemporariaosDadosSerãoPerdidosToolStripMenuItem.Name = "listaTemporariaosDadosSerãoPerdidosToolStripMenuItem";
-            this.listaTemporariaosDadosSerãoPerdidosToolStripMenuItem.Size = new System.Drawing.Size(291, 22);
-            this.listaTemporariaosDadosSerãoPerdidosToolStripMenuItem.Text = "Lista (os dados serão perdidos ao fechar) ";
-            // 
-            // visualizarToolStripMenuItem
-            // 
-            this.visualizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.livrosToolStripMenuItem});
-            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.visualizarToolStripMenuItem.Text = "Visualizar ";
-            // 
-            // livrosToolStripMenuItem
-            // 
-            this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
-            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.livrosToolStripMenuItem.Text = "Questões";
-            // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.desenvolvedoresToolStripMenuItem});
+            this.desenvolvedoresToolStripMenuItem,
+            this.objetivoToolStripMenuItem});
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
@@ -256,8 +193,16 @@
             // desenvolvedoresToolStripMenuItem
             // 
             this.desenvolvedoresToolStripMenuItem.Name = "desenvolvedoresToolStripMenuItem";
-            this.desenvolvedoresToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.desenvolvedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.desenvolvedoresToolStripMenuItem.Text = "Desenvolvedores";
+            this.desenvolvedoresToolStripMenuItem.Click += new System.EventHandler(this.AoClicarEmDesenvolvedores);
+            // 
+            // objetivoToolStripMenuItem
+            // 
+            this.objetivoToolStripMenuItem.Name = "objetivoToolStripMenuItem";
+            this.objetivoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.objetivoToolStripMenuItem.Text = "Objetivo";
+            this.objetivoToolStripMenuItem.Click += new System.EventHandler(this.AoClicarEmObjetivo);
             // 
             // errorProvider1
             // 
@@ -297,7 +242,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.txtCorpo);
             this.Controls.Add(this.txtTitulo);
@@ -328,23 +272,17 @@
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.TextBox txtCorpo;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem connectionStringToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaTemporariaosDadosSerãoPerdidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desenvolvedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem definirStringDeConexãoToolStripMenuItem;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox txtResposta;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem objetivoToolStripMenuItem;
     }
 }
 
