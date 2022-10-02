@@ -60,11 +60,13 @@
             // 
             // viewQuestoes
             // 
+            this.viewQuestoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.viewQuestoes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.viewQuestoes.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.viewQuestoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewQuestoes.Location = new System.Drawing.Point(12, 42);
+            this.viewQuestoes.Location = new System.Drawing.Point(12, 54);
             this.viewQuestoes.Name = "viewQuestoes";
-            this.viewQuestoes.Size = new System.Drawing.Size(363, 322);
+            this.viewQuestoes.Size = new System.Drawing.Size(440, 310);
             this.viewQuestoes.TabIndex = 0;
             this.viewQuestoes.TabStop = false;
             // 
@@ -73,7 +75,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTitulo.Location = new System.Drawing.Point(380, 54);
+            this.lblTitulo.Location = new System.Drawing.Point(458, 54);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(121, 16);
             this.lblTitulo.TabIndex = 1;
@@ -84,7 +86,7 @@
             this.lblCorpoQuestao.AutoSize = true;
             this.lblCorpoQuestao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorpoQuestao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCorpoQuestao.Location = new System.Drawing.Point(381, 100);
+            this.lblCorpoQuestao.Location = new System.Drawing.Point(459, 100);
             this.lblCorpoQuestao.Name = "lblCorpoQuestao";
             this.lblCorpoQuestao.Size = new System.Drawing.Size(125, 16);
             this.lblCorpoQuestao.TabIndex = 2;
@@ -93,20 +95,20 @@
             // txtTitulo
             // 
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitulo.Location = new System.Drawing.Point(383, 75);
+            this.txtTitulo.Location = new System.Drawing.Point(461, 75);
             this.txtTitulo.MaxLength = 54;
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(556, 22);
+            this.txtTitulo.Size = new System.Drawing.Size(478, 22);
             this.txtTitulo.TabIndex = 0;
             this.txtTitulo.Leave += new System.EventHandler(this.ValidarTituloSaida);
             // 
             // txtCorpo
             // 
-            this.txtCorpo.Location = new System.Drawing.Point(383, 119);
+            this.txtCorpo.Location = new System.Drawing.Point(461, 119);
             this.txtCorpo.Multiline = true;
             this.txtCorpo.Name = "txtCorpo";
             this.txtCorpo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCorpo.Size = new System.Drawing.Size(554, 137);
+            this.txtCorpo.Size = new System.Drawing.Size(476, 137);
             this.txtCorpo.TabIndex = 1;
             this.txtCorpo.Enter += new System.EventHandler(this.AoValidarCorpoEntrada);
             // 
@@ -182,7 +184,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 26);
+            this.label2.Location = new System.Drawing.Point(12, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 13);
             this.label2.TabIndex = 10;
@@ -240,7 +242,7 @@
             // livrosToolStripMenuItem
             // 
             this.livrosToolStripMenuItem.Name = "livrosToolStripMenuItem";
-            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.livrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.livrosToolStripMenuItem.Text = "Questões";
             // 
             // sobreToolStripMenuItem
@@ -266,7 +268,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(381, 259);
+            this.label3.Location = new System.Drawing.Point(459, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 12;
@@ -274,12 +276,13 @@
             // 
             // txtResposta
             // 
-            this.txtResposta.Location = new System.Drawing.Point(384, 278);
+            this.txtResposta.Location = new System.Drawing.Point(462, 278);
             this.txtResposta.Multiline = true;
             this.txtResposta.Name = "txtResposta";
             this.txtResposta.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtResposta.Size = new System.Drawing.Size(553, 86);
+            this.txtResposta.Size = new System.Drawing.Size(475, 86);
             this.txtResposta.TabIndex = 2;
+            this.txtResposta.Enter += new System.EventHandler(this.AoValidarEntradaResposta);
             // 
             // TelaPrincipal
             // 
