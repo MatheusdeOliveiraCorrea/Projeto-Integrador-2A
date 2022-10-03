@@ -24,7 +24,9 @@ namespace CadastroQuestoes
         {
             try
             {
-                if (!ValidarTituloCorpo())
+                Func<string, string, bool> ValidarVazioNull = (x, y) => { return !(string.IsNullOrEmpty(x) || string.IsNullOrEmpty(y)); };
+
+                if (!ValidarVazioNull(txtTitulo.Text, txtCorpo.Text))
                     throw new Exception("POR FAVOR, COLOQUE UM TITULO E UM CORPO");
 
                 using (SqlConnection conexaoSql = new SqlConnection(ConstantesSQL.StringDeConexao))
@@ -70,11 +72,6 @@ namespace CadastroQuestoes
         private void AoValidarCorpoEntrada(object sender, EventArgs e)
         {
             var somenteLeitura = string.IsNullOrEmpty(txtTitulo.Text) ? txtCorpo.ReadOnly = true : txtCorpo.ReadOnly = false;
-        }
-
-        public bool ValidarTituloCorpo()
-        {
-            return !(string.IsNullOrEmpty(txtTitulo.Text));
         }
 
         private void AoValidarEntradaResposta(object sender, EventArgs e)
@@ -132,13 +129,13 @@ namespace CadastroQuestoes
 
         private Questao CriarQuestaoDoBancoDeDados(SqlDataReader leitor)
         {
-            var questao = new Questao();
-            questao.ID = leitor.GetInt32(0);
-            questao.Titulo = leitor.GetString(1);
-            questao.Corpo = leitor.GetString(2);
-            questao.Resposta = leitor.GetString(3);
-
-            return questao;
+            return new Questao()
+            {
+                ID = leitor.GetInt32(0),
+                Titulo = leitor.GetString(1),
+                Corpo = leitor.GetString(2),
+                Resposta = leitor.GetString(3)
+            };
         }
 
         private void AoClicarExcluir(object sender, EventArgs e)
